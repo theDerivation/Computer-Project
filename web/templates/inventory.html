@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Inventory Page</title>
+    <script>
+      function openApparatusPage() {
+        window.location.href = '{{ url_for("apparatus") }}';
+      }
+    </script>
+    <script>
+      function openChemicalsPage() {
+        window.location.href = '{{ url_for("chemicals") }}';
+      }
+    </script>
+  </head>
+  <body>
+   
+    <style>
+      body {
+        background-image: url('D:\FINAL\web\static\images\chem.jpg');
+      }
+      </style>
+    <div class="navbar">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Login</a>
+    </div>
+
+    <div class="fullscreen-container">
+      <h2 class="inventory-welcome">Welcome to the Inventory Page</h2>
+
+      <div class="button-container">
+        <button class="inventory-button" onclick="openApparatusPage()">
+          Apparatus
+        </button>
+      </div>
+
+      <div class="button-container">
+        <button class="inventory-button" onclick="openChemicalsPage()">
+          Chemicals
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
