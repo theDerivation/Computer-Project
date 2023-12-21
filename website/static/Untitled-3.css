@@ -1,0 +1,81 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(caviar_dreams/CaviarDreams.ttf) format('truetype');
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidebar {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    background: linear-gradient(to top, rgb(8, 114, 146) 0%, rgb(4, 46, 73) 40%, rgb(5, 17, 82) 93%);
+    left: 0; 
+    z-index: 1;
+    transition: all 0.2s linear 3s, label 0s linear -0.1s;
+    color: transparent;
+    transition: 0.2s;
+}
+
+.sidebar:hover {
+    user-select: none;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    /* background: linear-gradient(to top, rgb(2, 2, 252) 0%, rgb(26, 26, 141) 10%, rgb(6, 6, 117) 20%, rgb(30, 2, 83) 45%); */
+    top: 0;
+    left: 0;
+    padding-left: 5px 20px;
+    border-top-right-radius: 5px;
+    color: antiquewhite;
+    text-align: center;
+    font-family: CaviarDreams;
+    overflow-x: hidden;   
+    z-index: 1;
+}
+
+
+.sidebar hr{
+    background: linear-gradient(90deg, transparent, rgb(0,153,184,1), transparent);
+    border: 0;
+    height: 1px;    
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.sidebar label{
+    display: block;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.sidebar label:hover {
+    background-color: rgba(16, 16, 148, 0.699);
+    font-weight: 800;
+    border: 0.9px solid rgb(66, 54, 223);
+}
+
+
+input[type = "radio"]:checked + label {
+    background-color: rgb(58, 23, 255);
+    border: 2px solid rgb(83, 52, 255);
+    font-weight: 800;
+
+}
+
+.inventories {
+    margin-left: 60px;
+    font-size: 28px; 
+    padding: 0px 10px;
+    padding-left: 30px;
+    
+}
+
+#main {
+    margin-left: 60px;
+}
