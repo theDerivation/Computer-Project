@@ -1,16 +1,16 @@
 * {
   user-select: none;
 }
+
 body {
-    font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 @font-face {
-    font-family: CaviarDreams;
-    src: url(caviar_dreams/CaviarDreams.ttf) format('truetype');
-    
+  font-family: CaviarDreams;
+  src: url(caviar_dreams/CaviarDreams.ttf) format('truetype');
 }
-  
+
 .sidenav {
   height: 100%;
   width: 60px;
@@ -20,7 +20,7 @@ body {
   left: 0;
   background: linear-gradient(to top, rgb(8, 114, 146) 0%, rgb(4, 46, 73) 40%, rgb(5, 17, 82) 93%);
   flex-flow: column wrap;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   padding-top: 20px;
   align-items: center;
   border-top-right-radius: 5px;
@@ -28,33 +28,33 @@ body {
   transition: 0.2s;
 }
 
-.sidenav button{
-  padding: 6px 12px ;
+.sidenav button {
+  padding: 6px 12px;
   text-decoration: none;
   border: none;
-  background-color: transparent ;
+  background-color: transparent;
   display: block;
-  margin: auto ;
+  margin: auto;
   font-size: 1.5em;
   font-family: CaviarDreams;
   margin-top: 20%;
   font-weight: lighter;
   text-align: center;
-  color:rgb(8, 114, 146);
-  
+  color: rgb(8, 114, 146);
+
 }
 
-.sidenav button:hover{
+.sidenav button:hover {
   color: #f1f1f1;
   border-color: #f1f1f1;
 }
 
 .inventories {
   margin-left: 60px;
-  font-size: 28px; 
+  font-size: 28px;
   padding: 0px 10px;
   padding-left: 30px;
-  
+
 }
 
 #main {
