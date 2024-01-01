@@ -23,3 +23,13 @@ python run.py
 ```
 
 will start the server
+
+
+to push
+
+
+```
+git add .
+git commit -m "<message>"
+git push origin main
+```
