@@ -7,7 +7,7 @@ python -m venv env
 ```
 
 ```
-.env\Scripts\activate
+env\Scripts\activate
 ```
 
 you should see the (env) header before the terminal 
