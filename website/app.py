@@ -83,6 +83,8 @@ def login():
         if user.password == password:
             login_user(user)
             return redirect(url_for("home"))
+        else:
+            return redirect(url_for("login"))
     return render_template("login.html", form=form)
 
 if __name__ == "__main__":
