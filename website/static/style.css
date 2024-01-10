@@ -1,14 +1,14 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url(caviar_dreams/CaviarDreams.ttf) format('truetype');
+}
+
 * {
   user-select: none;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-}
-
-@font-face {
-  font-family: CaviarDreams;
-  src: url(caviar_dreams/CaviarDreams.ttf) format('truetype');
+  font-family: "CaviarDreams", sans-serif;
 }
 
 .sidenav {
@@ -59,4 +59,8 @@ body {
 
 #main {
   margin-left: 60px;
+}
+
+#main #chemicalspage {
+  display: none;
 }

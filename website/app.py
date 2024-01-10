@@ -70,7 +70,7 @@ def home():
         db.session.add(apparatus)
         db.session.commit()
         return redirect(url_for("home"))
-    return render_template("index2.html", apparatuses=apparatuses, form=form)
+    return render_template("index.html", apparatuses=apparatuses, form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])

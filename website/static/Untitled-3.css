@@ -11,7 +11,8 @@ body {
     width: 60px;
     position: fixed;
     background: linear-gradient(to top, rgb(8, 114, 146) 0%, rgb(4, 46, 73) 40%, rgb(5, 17, 82) 93%);
-    left: 0; 
+    left: 0;
+    top:0;
     z-index: 1;
     transition: all 0.2s linear 3s, label 0s linear -0.1s;
     color: transparent;
