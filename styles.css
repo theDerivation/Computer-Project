@@ -1,0 +1,119 @@
+:root {
+    font: 1em sans-serif;
+    --rich-black: #03071eff;
+    --chocolate-cosmos1: #370617ff;
+    --rosewood: #6a040fff;
+    --penn-red: #9d0208ff;
+    --engineering-orange: #d00000ff;
+    --sinopia: #dc2f02ff;
+    --persimmon: #e85d04ff;
+    --princeton-orange: #f48c06ff;
+    --orange-web: #faa307ff;
+    --selective-yellow: #ffba08ff;
+
+    --chocolate-cosmos2: #590d22ff;
+    --claret: #800f2fff;
+    --amaranth-purple: #a4133cff;
+    --rose-red: #c9184aff;
+    --bright-pink-crayola: #ff4d6dff;
+    --bright-pink-crayola-2: #ff758fff;
+    --salmon-pink: #ff8fa3ff;
+    --cherry-blossom-pink: #ffb3c1ff;
+    --pink: #ffccd5ff;
+    --lavender-blush: #fff0f3ff;
+}
+
+body {
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 226, 230);
+    display: flex;
+    /* height: 100vh; */
+}
+
+.notbootstrapnavbar {
+    overflow: hidden;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 12vw;
+    background-color: var(--rich-black);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-11vw);
+    transition: transform 150ms;
+
+    /* justify-content: space-between; */
+    div {
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 1px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 95%;
+            text-decoration: none;
+            color: var(--pink);
+            position: relative;
+            height: 50px;
+            width: 90%;
+            border-radius: 8px;
+            margin-top: 5px;
+            transition: background-color 100ms;
+            padding-left: 3px;
+        }
+    }
+}
+
+.notbootstrapnavbar:hover {
+    transform: translateX(0);
+}
+
+.notbootstrapnavbar a:hover {
+    background-color: rgb(7, 16, 65);
+    box-shadow: 0 0 3px rgb(61, 85, 219);
+}
+
+main {
+    margin: 1vh 1vh 1vh 2vw;
+    width: calc(100% - 2vw);
+    padding: 20px;
+    border-radius: 9px;
+    /* height: 100vh;    */
+    background-color: var(--lavender-blush);
+    display: flex;
+    justify-content: center;
+    input{
+        border-radius: 10px;
+        border-style: none;
+    }
+}
+
+.notbootstrapform {
+    width: 97%;
+    height: 500px;
+    background-color: var(--bright-pink-crayola);
+    border-radius: 10px;
+    padding: 9px;
+    
+    .notbootstraphead{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        
+    }
+}
